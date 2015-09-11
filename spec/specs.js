@@ -1,5 +1,5 @@
-describe('findWord', function() {
-  it('finds the position(s) of a search word in an array', function() {
-    expect(findWord('aardvarks enter offices', 'aardvarks')).to.equal('0');
+describe('findAndReplace', function() {
+  it('finds word(s) in an array and replace it with another word', function() {
+    expect(findAndReplace('aardvarks enter offices', 'aardvarks', 'potatoes')).to.equal('potatoes enter offices');
   });
 });

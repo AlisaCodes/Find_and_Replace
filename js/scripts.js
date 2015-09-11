@@ -1,8 +1,16 @@
 
 
-var findWord = function(string, searchWord) {
+var findAndReplace = function(string, searchWord, replaceWord) {
+var wordArray = string.toLowerCase().split(" ");
 
-}
+  for(var i = 0; i < wordArray.length; i++) {
+      // debugger;
+    if (wordArray[i] === searchWord) {
+      wordArray[i] = replaceWord;
+    };
+  };
+    return wordArray.join(" ");
+};
 
 
 // $(document).ready(function() {
